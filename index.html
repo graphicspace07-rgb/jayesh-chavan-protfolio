@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayesh Hanamant Chavan - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000;
+        }
+        /* Custom Scrollbar for sleek look */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #09090b;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #27272a;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3f3f46;
+        }
+        .glass-panel {
+            background: rgba(20, 20, 23, 0.6);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+        }
+        .glass-card-hover:hover {
+            background: rgba(30, 30, 35, 0.7);
+            border-color: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(255,255,255,0.1);
+        }
+    </style>
+</head>
+<body class="text-zinc-300 antialiased min-h-screen selection:bg-indigo-500/30 selection:text-indigo-200 overflow-x-hidden relative">
+
+    <!-- Ambient Background Lighting (Aurora Effect) -->
+    <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+        <div class="absolute top-[-10%] left-[-10%] w-3/4 h-3/4 bg-indigo-900/20 rounded-full blur-[120px] mix-blend-screen animate-pulse"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-3/4 h-3/4 bg-blue-900/20 rounded-full blur-[120px] mix-blend-screen"></div>
+        <div class="absolute top-[20%] right-[20%] w-1/3 h-1/3 bg-purple-900/20 rounded-full blur-[100px] mix-blend-screen"></div>
+    </div>
+
+    <main class="max-w-6xl mx-auto p-4 md:p-8 lg:py-12 space-y-6">
+        
+        <!-- Header / Hero Section (Bento Grid Layout) -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            
+            <!-- Profile Card -->
+            <div class="lg:col-span-2 glass-panel rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-8 opacity-20 group-hover:opacity-40 transition-opacity duration-700">
+                    <iconify-icon icon="solar:code-circle-linear" width="120" class="text-indigo-400"></iconify-icon>
+                </div>
+                
+                <div class="space-y-4 z-10">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-xs font-medium tracking-wide uppercase mb-4">
+                            <span class="relative flex h-2 w-2">
+                              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+                              <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
+                            </span>
+                            Available for work
+                        </div>
+                        <h1 class="text-4xl md:text-5xl font-medium tracking-tight text-white text-glow">
+                            Jayesh Hanamant Chavan
+                        </h1>
+                        <p class="text-xl text-zinc-400 font-light mt-2 tracking-wide">Frontend UI Developer</p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3 mt-6">
+                        <a href="mailto:jayeshhchavan4007@gmail.com" class="flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors text-sm text-zinc-200">
+                            <iconify-icon icon="solar:letter-linear" width="18"></iconify-icon>
+                            jayeshhchavan4007@gmail.com
+                        </a>
+                        <a href="tel:+919923225220" class="flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors text-sm text-zinc-200">
+                            <iconify-icon icon="solar:phone-calling-linear" width="18"></iconify-icon>
+                            +91 9923225220
+                        </a>
+                        <span class="flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-sm text-zinc-400 cursor-default">
+                            <iconify-icon icon="solar:map-point-linear" width="18"></iconify-icon>
+                            Pune, Maharashtra
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Stats / Download -->
+            <div class="glass-panel rounded-3xl p-6 flex flex-col justify-center space-y-6">
+                <div>
+                    <span class="text-5xl font-medium text-white tracking-tighter">3+</span>
+                    <p class="text-zinc-500 text-sm font-medium uppercase tracking-widest mt-1">Years Experience</p>
+                </div>
+                <div class="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+                <div class="space-y-3">
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="text-zinc-400">Projects Delivered</span>
+                        <span class="text-white font-medium">45+</span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="text-zinc-400">Accessibility</span>
+                        <span class="text-emerald-400 font-medium">WCAG Compliant</span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="text-zinc-400">Stack</span>
+                        <span class="text-indigo-400 font-medium">Angular & React</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Summary & Tech Stack -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            
+            <!-- Summary -->
+            <div class="lg:col-span-7 glass-panel rounded-3xl p-8 glass-card-hover transition-all duration-500">
+                <h2 class="text-xl font-medium text-white tracking-tight mb-4 flex items-center gap-2">
+                    <iconify-icon icon="solar:user-id-linear" class="text-indigo-400"></iconify-icon>
+                    Professional Summary
+                </h2>
+                <p class="text-zinc-400 leading-relaxed font-light text-sm md:text-base">
+                    A passionate Frontend UI Developer specializing in building high-quality, innovative, and high-performing web applications. Expert in <span class="text-zinc-200 font-normal">Angular, TypeScript, and ReactJS</span>. I build reusable components, integrate complex RESTful APIs, and ensure strict adherence to WCAG accessibility standards. My background includes designing large-scale FinTech platforms for major banks and institutions, bridging the gap between Figma designs and pixel-perfect code.
+                </p>
+            </div>
+
+            <!-- Tech Stack Pills -->
+            <div class="lg:col-span-5 glass-panel rounded-3xl p-8 glass-card-hover transition-all duration-500 flex flex-col justify-center">
+                <h2 class="text-xl font-medium text-white tracking-tight mb-6 flex items-center gap-2">
+                    <iconify-icon icon="solar:cpu-linear" class="text-indigo-400"></iconify-icon>
+                    Tech Arsenal
+                </h2>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1.5 rounded-lg bg-red-500/10 border border-red-500/20 text-red-200 text-xs font-medium">Angular CLI</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-200 text-xs font-medium">ReactJS</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-sky-500/10 border border-sky-500/20 text-sky-200 text-xs font-medium">TypeScript</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-yellow-500/10 border border-yellow-500/20 text-yellow-200 text-xs font-medium">JavaScript</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-cyan-200 text-xs font-medium">Tailwind CSS</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-purple-500/10 border border-purple-500/20 text-purple-200 text-xs font-medium">Bootstrap</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-orange-500/10 border border-orange-500/20 text-orange-200 text-xs font-medium">HTML5/CSS3</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-pink-500/10 border border-pink-500/20 text-pink-200 text-xs font-medium">Figma</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-green-500/10 border border-green-500/20 text-green-200 text-xs font-medium">Rest API</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-zinc-500/10 border border-zinc-500/20 text-zinc-200 text-xs font-medium">GitLab</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="glass-panel rounded-3xl p-8">
+            <h2 class="text-2xl font-medium text-white tracking-tight mb-8 flex items-center gap-3">
+                <iconify-icon icon="solar:briefcase-linear" class="text-indigo-400"></iconify-icon>
+                Experience
+            </h2>
+
+            <div class="relative space-y-12">
+                <!-- Vertical Line -->
+                <div class="absolute left-4 top-4 bottom-4 w-px bg-zinc-800 md:left-8"></div>
+
+                <!-- Job 1 -->
+                <div class="relative pl-12 md:pl-20 group">
+                    <div class="absolute left-[11px] md:left-[27px] top-2 w-3 h-3 rounded-full bg-zinc-900 border-2 border-indigo-500 z-10 group-hover:scale-125 transition-transform duration-300"></div>
+                    
+                    <div class="flex flex-col md:flex-row md:items-baseline md:justify-between mb-2">
+                        <h3 class="text-lg font-medium text-white">Frontend Developer</h3>
+                        <span class="text-xs font-medium text-indigo-300 bg-indigo-500/10 border border-indigo-500/20 px-2 py-1 rounded-md">Dec 2024 - Present</span>
+                    </div>
+                    <div class="text-zinc-400 mb-4 font-medium">Optimum Financial Solutions Pvt. Ltd.</div>
+                    
+                    <ul class="space-y-2 text-sm text-zinc-400 font-light mb-4">
+                        <li class="flex items-start gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" class="text-zinc-600 mt-0.5 min-w-[16px]"></iconify-icon>
+                            Developing pixel-perfect dashboards using Angular, aligned with Figma.
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" class="text-zinc-600 mt-0.5 min-w-[16px]"></iconify-icon>
+                            Integrated Highcharts for visualization and complex DataTables with sorting/filtering.
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" class="text-zinc-600 mt-0.5 min-w-[16px]"></iconify-icon>
+                            Built financial calculators and optimized two-way data binding performance.
+                        </li>
+                    </ul>
+
+                    <!-- Highlighted Projects inside Job -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mt-4">
+                        <div class="bg-black/20 border border-white/5 p-3 rounded-xl">
+                            <div class="text-xs text-zinc-500 uppercase tracking-wider mb-1">Project</div>
+                            <div class="text-white text-sm font-medium">MFD Universe</div>
+                        </div>
+                        <div class="bg-black/20 border border-white/5 p-3 rounded-xl">
+                            <div class="text-xs text-zinc-500 uppercase tracking-wider mb-1">Project</div>
+                            <div class="text-white text-sm font-medium">IIFL Investment Platform</div>
+                        </div>
+                        <div class="bg-black/20 border border-white/5 p-3 rounded-xl">
+                            <div class="text-xs text-zinc-500 uppercase tracking-wider mb-1">Project</div>
+                            <div class="text-white text-sm font-medium">JM Financial InvestPal</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="relative pl-12 md:pl-20 group">
+                    <div class="absolute left-[11px] md:left-[27px] top-2 w-3 h-3 rounded-full bg-zinc-900 border-2 border-zinc-600 z-10 group-hover:border-indigo-400 transition-colors duration-300"></div>
+                    
+                    <div class="flex flex-col md:flex-row md:items-baseline md:justify-between mb-2">
+                        <h3 class="text-lg font-medium text-white">Frontend Developer</h3>
+                        <span class="text-xs font-medium text-zinc-400 bg-zinc-800/50 border border-zinc-700 px-2 py-1 rounded-md">Mar 2023 - Dec 2024</span>
+                    </div>
+                    <div class="text-zinc-400 mb-4 font-medium">White Code Technology Solutions Pvt. Ltd.</div>
+                    
+                    <ul class="space-y-2 text-sm text-zinc-400 font-light mb-4">
+                        <li class="flex items-start gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" class="text-zinc-600 mt-0.5 min-w-[16px]"></iconify-icon>
+                            Developed 40+ responsive websites for educational institutions.
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" class="text-zinc-600 mt-0.5 min-w-[16px]"></iconify-icon>
+                            Implemented strict WCAG Accessibility Guidelines.
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <iconify-icon icon="solar:check-circle-linear" class="text-zinc-600 mt-0.5 min-w-[16px]"></iconify-icon>
+                            Managed CMS integration and performed CRUD operations for student data.
+                        </li>
+                    </ul>
+                    
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="px-2 py-1 rounded-md bg-white/5 border border-white/5 text-xs text-zinc-400">WhiteCode CMS</span>
+                        <span class="px-2 py-1 rounded-md bg-white/5 border border-white/5 text-xs text-zinc-400">Kapol Vidyanidhi</span>
+                        <span class="px-2 py-1 rounded-md bg-white/5 border border-white/5 text-xs text-zinc-400">Dr. Homi Bhabha University</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Work Detail (FinTech Focus) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="glass-panel rounded-3xl p-8 glass-card-hover transition-all duration-500 flex flex-col">
+                <div class="h-10 w-10 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white mb-6 shadow-lg shadow-indigo-500/20">
+                    <iconify-icon icon="solar:graph-up-linear" width="24"></iconify-icon>
+                </div>
+                <h3 class="text-xl font-medium text-white mb-2">FinTech Platforms</h3>
+                <p class="text-zinc-400 text-sm font-light leading-relaxed mb-6 flex-grow">
+                    Architected dashboards for MFD Universe and IIFL Securities. Focused on portfolio tracking, SIP management, and investment analytics using Highcharts. Implemented advanced data grids handling thousands of records with realtime sorting and filtering.
+                </p>
+                <div class="flex gap-2 text-xs">
+                    <span class="px-2 py-1 rounded border border-indigo-500/30 text-indigo-300">Angular</span>
+                    <span class="px-2 py-1 rounded border border-indigo-500/30 text-indigo-300">Highcharts</span>
+                </div>
+            </div>
+
+            <div class="glass-panel rounded-3xl p-8 glass-card-hover transition-all duration-500 flex flex-col">
+                <div class="h-10 w-10 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-white mb-6 shadow-lg shadow-emerald-500/20">
+                    <iconify-icon icon="solar:accessibility-linear" width="24"></iconify-icon>
+                </div>
+                <h3 class="text-xl font-medium text-white mb-2">Education & CMS</h3>
+                <p class="text-zinc-400 text-sm font-light leading-relaxed mb-6 flex-grow">
+                    Led frontend delivery for 40+ college websites including Dr. Homi Bhabha State University. Built a custom Admin CMS using React and Material UI. Ensured all modules were accessible and WCAG compliant for public sector use.
+                </p>
+                <div class="flex gap-2 text-xs">
+                    <span class="px-2 py-1 rounded border border-emerald-500/30 text-emerald-300">React</span>
+                    <span class="px-2 py-1 rounded border border-emerald-500/30 text-emerald-300">WCAG</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education & Personal -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Education -->
+            <div class="md:col-span-2 glass-panel rounded-3xl p-8">
+                <h2 class="text-lg font-medium text-white mb-6 flex items-center gap-2">
+                    <iconify-icon icon="solar:diploma-linear" class="text-indigo-400"></iconify-icon>
+                    Education
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="p-4 rounded-2xl bg-white/5 border border-white/5">
+                        <div class="text-white font-medium text-sm">Full Stack Developer</div>
+                        <div class="text-zinc-500 text-xs mt-1">Q-spiders Wakad Pune</div>
+                        <div class="mt-2 inline-block px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-semibold tracking-wide">GRADE A+</div>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-white/5 border border-white/5">
+                        <div class="text-white font-medium text-sm">BCS (2019-2022)</div>
+                        <div class="text-zinc-500 text-xs mt-1">Shivaji University Kolhapur</div>
+                        <div class="mt-2 text-zinc-300 text-xs">78.13%</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Details -->
+            <div class="glass-panel rounded-3xl p-8">
+                <h2 class="text-lg font-medium text-white mb-6 flex items-center gap-2">
+                    <iconify-icon icon="solar:user-linear" class="text-indigo-400"></iconify-icon>
+                    Details
+                </h2>
+                <div class="space-y-4">
+                    <div>
+                        <div class="text-xs text-zinc-500 uppercase tracking-wide">Languages</div>
+                        <div class="text-zinc-300 text-sm mt-1">English, Hindi, Marathi</div>
+                    </div>
+                    <div>
+                        <div class="text-xs text-zinc-500 uppercase tracking-wide">DOB</div>
+                        <div class="text-zinc-300 text-sm mt-1">6th August 2001</div>
+                    </div>
+                    <div>
+                        <div class="text-xs text-zinc-500 uppercase tracking-wide">Social</div>
+                        <a href="https://www.linkedin.com/in/chavanjayesh4007" class="text-indigo-400 text-sm mt-1 hover:text-indigo-300 transition-colors flex items-center gap-1">
+                            LinkedIn <iconify-icon icon="solar:arrow-right-up-linear"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="py-8 text-center border-t border-white/5 mt-12">
+            <p class="text-zinc-600 text-xs">Designed & Developed by Jayesh Hanamant Chavan</p>
+            <p class="text-zinc-700 text-[10px] mt-2 font-light">Pune, Maharashtra • 406 Gujar Housing Society</p>
+        </footer>
+
+    </main>
+</body>
+</html>
